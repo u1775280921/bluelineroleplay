@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>BlueLine RolePlay | MTA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a1a2f, #0f2c52);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ---------- ANIMACJE ---------- */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ---------- HERO ---------- */
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background: radial-gradient(circle at top, #163a6b, #0a1a2f);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        header span {
+            color: #3da9fc;
+        }
+
+        header p {
+            margin: 20px 0;
+            font-size: 1.15rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background: #3da9fc;
+            color: #000;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1e90ff;
+            transform: scale(1.05);
+        }
+
+        /* ---------- SEKCJE ---------- */
+        section {
+            padding: 90px 10%;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 25px;
+            color: #3da9fc;
+            text-align: center;
+        }
+
+        .section-desc {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            opacity: 0.85;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 30px;
+            border-radius: 18px;
+            transition: 0.3s;
+            backdrop-filter: blur(6px);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ---------- STAFF ---------- */
+        .staff-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .staff-role {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            color: #3da9fc;
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            background: #081424;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header>
+    <div class="fade-up">
+        <h1><span>BlueLine</span> RolePlay</h1>
+        <p>
+            Serwer MTA typu <b>Medium RP</b><br>
+            Klimat • Realizm • Społeczność
+        </p>
+        <a href="#join" class="btn">Dołącz do gry</a>
+    </div>
+</header>
+
+<!-- O SERWERZE -->
+<section>
+    <h2>O serwerze</h2>
+    <p class="section-desc">
+        BlueLine RolePlay to miejsce stworzone dla graczy,
+        którzy cenią realizm, klimat i dobrą zabawę bez zbędnych ograniczeń.
+    </p>
+
+    <div class="grid">
+        <div class="card fade-up">
+            <h3>🎭 Medium RP</h3>
+            <p>Balans pomiędzy realizmem a swobodną rozgrywką.</p>
+        </div>
+        <div class="card fade-up">
+            <h3>👮 Aktywna administracja</h3>
+            <p>Szybka pomoc i dbanie o porządek na serwerze.</p>
+        </div>
+        <div class="card fade-up">
+            <h3>🌆 Rozbudowany świat</h3>
+            <p>Frakcje, organizacje, biznesy i fabularne wydarzenia.</p>
+        </div>
+    </div>
+</section>
+
+<!-- REGULAMIN -->
+<section>
+    <h2>Regulamin</h2>
+    <div class="grid">
+        <div class="card fade-up">
+            ✔ Graj realistycznie (RolePlay)<br>
+            ✔ Zakaz MG, PG, RK, NON-RP<br>
+            ✔ Akcje tylko z powodem RP<br>
+            ✔ Szanuj innych graczy<br>
+            ✔ Decyzje administracji są ostateczne
+        </div>
+    </div>
+</section>
+
+<!-- STAFF -->
+<section>
+    <h2>Administracja</h2>
+    <p class="section-desc">
+        Zespół odpowiedzialny za rozwój i porządek na serwerze.
+    </p>
+
+    <div class="grid">
+        <div class="card fade-up">
+            <div class="staff-name">makixyz!</div>
+            <div class="staff-role">Project Leader</div>
+        </div>
+        <div class="card fade-up">
+            <div class="staff-name">_Winter</div>
+            <div class="staff-role">Project Leader</div>
+        </div>
+    </div>
+</section>
+
+<!-- DOŁĄCZ -->
+<section id="join">
+    <h2>Dołącz do nas</h2>
+
+    <div class="grid">
+        <div class="card fade-up">
+            <h3>🎮 Nazwa serwera</h3>
+            <p><b>BlueLine RolePlay</b></p>
+        </div>
+        <div class="card fade-up">
+            <h3>💬 Discord</h3>
+            <p>Dołącz do naszej społeczności!</p>
+            <a href="https://discord.gg/Q2GArmEHhX" class="btn">Wejdź na Discord</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 BlueLine RolePlay 
+</footer>
+
+</body>
+</html>
